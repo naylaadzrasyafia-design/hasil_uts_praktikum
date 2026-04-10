@@ -1,0 +1,407 @@
+:root{
+    --vanilla:#FFF9EB;
+    --sage:#9FB2AC;
+    --blood:#5D0D18;
+}
+
+
+/* BODY */
+
+body{
+    font-family:Arial;
+    margin:0;
+    background:var(--vanilla);
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(6px);
+
+    z-index:1000;
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 20px;
+}
+
+.logo{
+    color:white;
+    font-size:22px;
+    margin:0;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#9FB2AC;
+}
+
+
+/* HERO */
+
+.hero{
+    margin-top:0;
+    height:100vh;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    color:white;
+}
+
+
+/* TOUR SECTION */
+
+#tour{
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* TOUR CARD */
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.tour-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+
+    width:23%;
+    min-width:230px;
+
+    border-top:5px solid var(--sage);
+}
+
+.tour-card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.tour-content{
+    padding:15px;
+}
+
+.tour-content h3{
+    color:var(--blood);
+}
+
+.location,
+.duration{
+    color:#555;
+    font-size:14px;
+}
+
+
+/* PRICE */
+
+.old-price{
+    text-decoration:line-through;
+    color:#777;
+    font-size:14px;
+}
+
+.new-price{
+    color:var(--blood);
+    font-weight:bold;
+    font-size:18px;
+}
+
+
+/* FORM */
+
+form{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    max-width:450px;
+    width:100%;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+input,
+select{
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+button{
+    padding:10px;
+    background:var(--blood);
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+    margin-top:15px;
+}
+
+button:hover{
+    opacity:0.85;
+}
+
+.error{
+    color:red;
+    font-size:12px;
+}
+
+
+/* ARTIKEL */
+
+#artikel{
+    background:var(--sage);
+    padding:30px;
+    border-radius:10px;
+    margin-top:40px;
+}
+
+#itemList{
+    list-style:none;
+    padding:0;
+    margin-top:15px;
+}
+
+#itemList li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:white;
+    padding:10px 15px;
+    margin-bottom:10px;
+
+    border-radius:6px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.08);
+}
+
+
+/* RADIO */
+
+.radio-group{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    margin-top:5px;
+}
+
+.radio-option{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:14px;
+}
+
+
+/* SECTION */
+
+section{
+    margin-top:50px;
+}
+
+main{
+    padding-top:70px;
+}
+
+
+/* FOOTER */
+
+.footer{
+    background:var(--blood);
+    color:var(--vanilla);
+    margin-top:60px;
+    padding-top:40px;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:0 20px;
+}
+
+.footer-brand h2{
+    color:var(--sage);
+    margin-bottom:10px;
+}
+
+.footer-brand p{
+    color:var(--vanilla);
+    max-width:300px;
+}
+
+.footer-nav h3,
+.footer-contact h3{
+    color:var(--sage);
+    margin-bottom:10px;
+}
+
+.footer-nav ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-nav li{
+    margin-bottom:8px;
+}
+
+.footer-nav a{
+    text-decoration:none;
+    color:var(--vanilla);
+    transition:0.3s;
+}
+
+.footer-nav a:hover{
+    color:var(--sage);
+}
+
+.footer-contact p{
+    margin:6px 0;
+    color:var(--vanilla);
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.2);
+    margin-top:30px;
+    padding:15px;
+    font-size:14px;
+    color:var(--vanilla);
+}
+
+
+/* BOOKING */
+
+#booking{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#booking h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .tour-card{
+        width:100%;
+    }
+
+    .card-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}
+
+/* MOBILE FIX */
+@media (max-width:768px){
+
+/* navbar */
+.nav-container{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+padding:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+gap:10px;
+font-size:14px;
+}
+
+/* hero text */
+.hero h1{
+font-size:26px;
+}
+
+.hero h2{
+font-size:20px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+/* section spacing */
+section{
+padding:0 15px;
+}
+
+/* card */
+.card-container{
+flex-direction:column;
+align-items:center;
+}
+
+.tour-card{
+width:100%;
+}
+
+/* form */
+form{
+width:100%;
+}
+
+/* artikel */
+#artikel{
+padding:20px;
+}
+
+}

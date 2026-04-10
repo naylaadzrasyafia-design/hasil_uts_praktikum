@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyJourney Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <h1 class="logo">✈ SkyJourney Travel</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#tour">Pilihan Tour</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#artikel">Artikel</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<!-- HERO / HOME -->
+<section class="hero" id="hero">
+
+    <div class="hero-text">
+        <h2>Welcome To SkyJourney Travel</h2>
+        <h1>Let's Explore The World</h1>
+        <p>Rasakan keseruan liburan tak terlupakan.</p>
+    </div>
+
+</section>
+
+
+<!-- PAKET TOUR -->
+<section id="tour">
+
+    <h2>Pilihan Tour Travel</h2>
+
+    <div class="card-container">
+
+        <!-- INGGRIS -->
+        <div class="tour-card">
+            <img src="assets/images/UK.webp">
+
+            <div class="tour-content">
+                <h3>07D/05N Inggris Tour</h3>
+
+                <p class="location">📍 Inggris</p>
+                <p class="duration">✈ 07D/05N</p>
+
+                <p><strong>Depart:</strong></p>
+                <ul>
+                    <li>13 May 2026</li>
+                    <li>3 Jun 2026</li>
+                    <li>21 Jul 2026</li>
+                </ul>
+
+                <div class="price">
+                    <p class="old-price">Start from IDR 35,888,000</p>
+                    <p class="new-price">IDR 30,888,000</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ICELAND -->
+        <div class="tour-card">
+            <img src="assets/images/iceland.webp">
+
+            <div class="tour-content">
+                <h3>07D/05N Islandia Tour</h3>
+
+                <p class="location">📍 Islandia</p>
+                <p class="duration">✈ 07D/05N</p>
+
+                <p><strong>Depart:</strong></p>
+                <ul>
+                    <li>13 May 2026</li>
+                    <li>3 Jun 2026</li>
+                    <li>21 Jul 2026</li>
+                </ul>
+
+                <div class="price">
+                    <p class="old-price">Start from IDR 35,888,000</p>
+                    <p class="new-price">IDR 30,888,000</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- BELANDA -->
+        <div class="tour-card">
+            <img src="assets/images/Netherlands.jpeg">
+
+            <div class="tour-content">
+                <h3>07D/05N Belanda Tour</h3>
+
+                <p class="location">📍 Belanda</p>
+                <p class="duration">✈ 07D/05N</p>
+
+                <p><strong>Depart:</strong></p>
+                <ul>
+                    <li>13 May 2026</li>
+                    <li>3 Jun 2026</li>
+                    <li>21 Jul 2026</li>
+                </ul>
+
+                <div class="price">
+                    <p class="old-price">Start from IDR 36,888,000</p>
+                    <p class="new-price">IDR 31,888,000</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- TURKI -->
+        <div class="tour-card">
+            <img src="assets/images/Turki.jpg">
+
+            <div class="tour-content">
+                <h3>07D/05N Turki Tour</h3>
+
+                <p class="location">📍 Turki</p>
+                <p class="duration">✈ 07D/05N</p>
+
+                <p><strong>Depart:</strong></p>
+                <ul>
+                    <li>13 May 2026</li>
+                    <li>3 Jun 2026</li>
+                    <li>21 Jul 2026</li>
+                </ul>
+
+                <div class="price">
+                    <p class="old-price">Start from IDR 37,888,000</p>
+                    <p class="new-price">IDR 32,888,000</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FORM BOOKING -->
+<section id="booking">
+
+    <h2>Form Pemesanan Tour</h2>
+
+    <form id="bookingForm">
+
+        <label>Nama Lengkap</label>
+        <input type="text" id="nama" required>
+        <small class="error"></small>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+        <small class="error"></small>
+
+        <label>Nomor Telepon</label>
+        <input type="number" id="telp" required>
+        <small class="error"></small>
+
+        <label>Pilih Tour</label>
+        <select id="tourSelect" required>
+            <option value="">Pilih Tour</option>
+            <option>Inggris Tour</option>
+            <option>Islandia Tour</option>
+            <option>Belanda Tour</option>
+            <option>Turki Tour</option>
+        </select>
+
+        <label>Metode Pembayaran</label>
+
+        <div class="radio-group">
+
+            <label class="radio-option">
+                <input type="radio" name="bayar" value="transfer">
+                <span>Transfer</span>
+            </label>
+
+            <label class="radio-option">
+                <input type="radio" name="bayar" value="ewallet">
+                <span>E-Wallet</span>
+            </label>
+
+        </div>
+
+        <button type="submit">Pesan Sekarang</button>
+
+    </form>
+
+</section>
+
+
+<!-- ARTIKEL DINAMIS -->
+<section id="artikel">
+
+    <h2>Daftar Artikel Travel</h2>
+
+    <input type="text" id="itemInput" placeholder="Tambah artikel">
+    <button onclick="addItem()">Tambah</button>
+
+    <ul id="itemList"></ul>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+            <h2>✈ SkyJourney Travel</h2>
+            <p>Menjadikan setiap perjalanan sebagai kenangan tak terlupakan.</p>
+        </div>
+
+        <!-- Navigasi -->
+        <div class="footer-nav">
+            <h3>Navigasi</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#tour">Pilihan Tour</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#artikel">Artikel</a></li>
+            </ul>
+        </div>
+
+        <!-- Kontak -->
+        <div class="footer-contact">
+            <h3>Kontak</h3>
+            <p>📞 +62 812-3456-7890</p>
+            <p>📧 info@skyjourney.id</p>
+            <p>📍 Medan, Sumatera Utara</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 SkyJourney Travel. Semua hak dilindungi.</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
